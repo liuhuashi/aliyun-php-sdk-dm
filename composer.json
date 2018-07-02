@@ -1,0 +1,19 @@
+{
+  "name": "rjyxz/aliyun-php-sdk-dm",
+  "description": "阿里云邮件推送服务 DirectMail。",
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Moments"
+    }
+  ],
+  "require": {
+    "php":">=5.4"
+  },
+  "autoload":{
+    "psr-4": {
+      "Rjyxz\\Aliyun\\": "src"
+    }
+  }
+}
