@@ -17,7 +17,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace Rjyxz\Aliyun\UnitTest\Ecs\Request;
+namespace UnitTest\Ecs\Request;
 
 class DescribeRegionsRequest extends \RpcAcsRequest
 {
