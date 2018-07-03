@@ -4,6 +4,12 @@
 
 阿里云邮件推送服务 DirectMail。
 
+## 安装
+
+```php
+composer require rjyxz/aliyun-php-sdk-dm
+```
+
 ## 例子
 
 ```php
@@ -33,4 +39,33 @@ function sendMail(){
         print_r($e->getErrorMessage());   
     }
 }
+```
+
+## 阿里云邮件推送
+
+服务地址 [https://dm.console.aliyun.com](https://dm.console.aliyun.com)
+
+邮件推送 > API 参考 
+
+[https://help.aliyun.com/document_detail/29434.html](https://help.aliyun.com/document_detail/29434.html)
+
+邮件推送 > SDK 参考
+
+[https://help.aliyun.com/document_detail/29460.html](https://help.aliyun.com/document_detail/29460.html)
+
+## 手动添加第三方库
+
+```php
+// 添加SDK包,将两个包放到自定义目录Services
+app/Services/aliyun-php-sdk-core
+app/Services/aliyun-php-sdk-dm
+// 添加Composer自动加载
+"classmap": [
+    "database/seeds",
+    "database/factories",
+    "app/Services/aliyun-php-sdk-core",
+    "app/Services/aliyun-php-sdk-dm"
+],
+// 更新Composer自动加载类
+composer dump-autoload
 ```
